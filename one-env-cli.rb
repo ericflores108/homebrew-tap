@@ -5,11 +5,11 @@
 class OneEnvCli < Formula
   desc ""
   homepage "https://github.com/ericflores108"
-  version "0.7"
+  version "0.8"
 
   on_macos do
-    url "https://github.com/ericflores108/one-env-cli/releases/download/v0.7/one-env-cli_Darwin_all.tar.gz"
-    sha256 "1ea31766cd4b83b555807e9b0af3f87480a5a76b82aa552861ab2084562b7de8"
+    url "https://github.com/ericflores108/one-env-cli/releases/download/v0.8/one-env-cli_Darwin_all.tar.gz"
+    sha256 "7d07beb5e75a98de7de767565a3208d674089f1be1efafe509b7973c77d8ffa2"
 
     def install
       bin.install "one-env-cli"
@@ -18,16 +18,16 @@ class OneEnvCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ericflores108/one-env-cli/releases/download/v0.7/one-env-cli_Linux_x86_64.tar.gz"
-      sha256 "2768def527673ca6ac43593678e8a69b09a677b6a91c81c1dea780b9600d8b5f"
+      url "https://github.com/ericflores108/one-env-cli/releases/download/v0.8/one-env-cli_Linux_x86_64.tar.gz"
+      sha256 "5abbbeeebaa10f6c97ac0141988f94925e2e5bcdefe4b8d94f397b5e0535d206"
 
       def install
         bin.install "one-env-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ericflores108/one-env-cli/releases/download/v0.7/one-env-cli_Linux_arm64.tar.gz"
-      sha256 "db44239c443a39e876bafd1d25c7dd65ebb289a8f8a1f8a3e7ba5eab9a3737a1"
+      url "https://github.com/ericflores108/one-env-cli/releases/download/v0.8/one-env-cli_Linux_arm64.tar.gz"
+      sha256 "0f29332bdcac04d17e3c77c0784809e8cf8539372c3acac43a1cf7bff6ce82ff"
 
       def install
         bin.install "one-env-cli"
